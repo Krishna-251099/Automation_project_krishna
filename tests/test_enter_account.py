@@ -4,7 +4,7 @@ from pages.New_user_signup_page import New_user_page
 from pages.Enter_Account_information_page import Enter_account_page
 from utils.excel_reader import Excel_reader
 def test_account_created(browser):
-    excel_r=Excel_reader(r"C:\Users\dell2\PycharmProjects\automationexercise\test_data\Book1.xlsx")
+    excel_r=Excel_reader(r"C:\Users\tripathi.krishna\Downloads\auto\test_data\Book1.xlsx")
     browser.get("https://automationexercise.com/login")
     all_data=excel_r.get_all_rows()
     page=New_user_page(browser)
